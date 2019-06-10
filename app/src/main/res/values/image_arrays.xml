@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="loading_anim">
+        <item>@drawable/icon_loading_1</item>
+        <item>@drawable/icon_loading_2</item>
+        <item>@drawable/icon_loading_3</item>
+        <item>@drawable/icon_loading_4</item>
+        <item>@drawable/icon_loading_5</item>
+        <item>@drawable/icon_loading_6</item>
+        <item>@drawable/icon_loading_7</item>
+        <item>@drawable/icon_loading_8</item>
+        <item>@drawable/icon_loading_9</item>
+        <item>@drawable/icon_loading_10</item>
+    </string-array>
+</resources>

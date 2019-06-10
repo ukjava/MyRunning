@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="pink">#d53026</color>
+    <color name="dark_pink">#dc143c</color>
+    <color name="index_red">#d53026</color>
+
+    <color name="white">#ffffff</color>
+    <color name="gray">#808080</color>
+    <color name="gray2">#00FA9A</color>
+    <color name="gray3">#DBDBDB</color>
+    <color name="appTheme">#ffffff</color>
+
+    <color name="yellow_1">#ffffff</color>
+    <color name="view_background">#ffffff</color>
+
+    <color name="text_yelow">#ff7f0d</color>
+
+    <color name="splan">#32000000</color>
+
+    <color name="tron">#d9d9d9</color>
+
+    <color name="common_back_color">#f5f5f5</color>
+
+    <color name="line">#ededed</color>
+
+    <color name="colorKeyBlank">#ffffff</color>
+    <color name="colorKeyPressed">#808080</color>
+
+    <color name="d53026">#d53026</color>
+    <color name="a505050">#505050</color>
+    <color name="a999999">#999999</color>
+    <color name="a383838">#383838</color>
+    <color name="a2a82e4">#2a82e4</color>
+    <color name="a666666">#666666</color>
+    <color name="af2f2f2">#F2F2F2</color>
+    <color name="a808080">#808080</color>
+    <color name="aaaaaaa">#aaaaaa</color>
+    <color name="ec3d33">#ec3d33</color>
+    <color name="ff8d1a">#ff8d1a</color>
+    <color name="dddddd">#dddddd</color>
+    <color name="a6a6a6">#a6a6a6</color>
+
+
+</resources>

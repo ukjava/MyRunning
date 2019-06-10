@@ -1,0 +1,4 @@
+#Sat May 11 22:47:33 GMT+08:00 2019
+base.0=D\:\\xiazai\\2013-10-24_adt-bundle-windows-x86-20130917\\MyRunning\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\6
+path.0=classes.dex
+renamed.0=classes.dex

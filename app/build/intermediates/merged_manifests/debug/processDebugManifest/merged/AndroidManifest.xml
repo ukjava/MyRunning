@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ukjava.myrunning"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" /> <!-- 访问网络 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 拍照 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 广播 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 鹰眼轨迹权限 -->
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入对象存储BOS数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+    &lt;!&ndash; SD卡读取权限，用于写入对象存储BOS数据&ndash;&gt;
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+    -->
+    <!-- 用于加快GPS首次定位 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于Android M及以上系统，申请加入忽略电池优化白名单 -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <!-- 百度地图显示权限 -->
+    //获取设备网络状态，禁用后无法获取网络状态
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    //网络权限，当禁用后，无法进行检索等相关业务
+    <uses-permission android:name="android.permission.INTERNET" />
+    //读取设备硬件信息，统计数据
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    //读取系统信息，包含系统版本等信息，用作统计
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    //获取设备的网络状态，鉴权所需网络代理
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    //允许sd卡写权限，需写入地图数据，禁用后无法显示地图
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--
+    //这个权限用于进行网络定位
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    -->
+    //这个权限用于访问GPS定位
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    //获取统计数据
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    //使用步行AR导航，配置Camera权限
+    <uses-permission android:name="android.permission.CAMERA" />
+    //程序在手机屏幕关闭后后台进程仍然运行
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 协处理器计步权限 -->
+    <uses-feature
+        android:name="android.hardware.sensor.stepcounter"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.stepdetector"
+        android:required="true" /> <!-- 在sdCard中创建与删除文件 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name="com.ukjava.myrunning.main.MyApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme.NoActionBar" >
+
+        <!-- key:开发者申请的Key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="YFv3CSjTQN3XBXYkZNwSLexCFKtOIhvX" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.ukjava.myrunning.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name="com.ukjava.myrunning.main.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ukjava.myrunning.main.StartPageActivity" />
+        <activity android:name="com.ukjava.myrunning.main.MainActivity" />
+        <activity android:name="com.ukjava.myrunning.module.settings.SettingsActivity" />
+        <activity android:name="com.ukjava.myrunning.module.settings.person.activity.PersonActivity" />
+        <activity android:name="com.ukjava.myrunning.baidu.BaiduMapActivity" />
+        <activity android:name="com.ukjava.myrunning.step.RunningActivity" />
+        <activity android:name="com.ukjava.myrunning.step.CountDownActivity" />
+        <activity android:name="com.ukjava.myrunning.step.StepFinishActivity" />
+        <activity android:name="com.ukjava.myrunning.module.news.NewsActivity" />
+        <activity android:name="com.ukjava.myrunning.step.RunningRecordActivity" />
+        <activity android:name="com.ukjava.myrunning.module.news.NewsDetailActivity" />
+        <activity android:name="com.ukjava.myrunning.weather.WeatherActivity" />
+        <activity android:name="com.ukjava.myrunning.weather.OtherWeatherActivity" />
+        <activity android:name="com.ukjava.myrunning.weather.OtherWterActivity" />
+        <activity android:name="com.ukjava.myrunning.module.adverts.ImageActivity" />
+
+        <receiver
+            android:name="com.ukjava.myrunning.step.MyReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <!-- 声明service组件,每个APP拥有自己独立的鹰眼追踪service -->
+        <service
+            android:name="com.baidu.trace.LBSTraceService"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <!-- 计步Service -->
+        <service
+            android:name="com.today.step.lib.TodayStepService"
+            android:enabled="true"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:priority="1000"
+            android:process=":todaystep" >
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service> <!-- 开机自启动 -->
+        <receiver
+            android:name="com.today.step.lib.TodayStepBootCompleteReceiver"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver> <!-- 关机广播 -->
+        <receiver android:name="com.today.step.lib.TodayStepShutdownReceiver" >
+            <intent-filter>
+
+                <!-- 关机广播 -->
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.jaiky.imagespickers.ImageSelectorActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/ImageSelectorTheme" />
+        <activity
+            android:name="com.jaiky.imagespickers.preview.MultiImgShowActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/ImageShowTheme" >
+        </activity>
+        <activity
+            android:name="com.yanzhenjie.permission.PermissionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="standard"
+            android:theme="@style/permission_PermissionActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+    </application>
+
+</manifest>

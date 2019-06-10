@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\xiazai\\2013-10-24_adt-bundle-windows-x86-20130917\\MyRunning\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Administrator.2013-20150129ZZ\\.gradle\\caches\\transforms-1\\files-1.1\\imagespickers-1.0.6.aar\\561eee884c6fc8e0a79a60d068d58cf9\\res\\values-w820dp-v13\\values-w820dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "57",
+                        "endOffsets": "108"
+                    }
+                }
+            ]
+        }
+    ]
+}

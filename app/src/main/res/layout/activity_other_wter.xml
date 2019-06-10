@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:padding="@dimen/dp_5"
+        android:background="@mipmap/timgs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_wtertemp"
+        android:text="当前温度:"
+        android:textSize="@dimen/dp_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/sk_wtertemp"
+        android:layout_toRightOf="@+id/tv_wtertemp"
+        android:text="19c"
+        android:textSize="@dimen/dp_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:padding="@dimen/dp_5"
+        android:id="@+id/wtertoday_week"
+        android:text="星期一"
+        android:textSize="@dimen/dp_15"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/wtertoday_city"
+        android:text="北京"
+        android:textSize="@dimen/dp_35"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/wtertoday_weather"
+        android:text="雷阵雨"
+        android:textSize="@dimen/dp_15"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:padding="@dimen/dp_5"
+        android:id="@+id/wtertoday_data"
+        android:text="2019年04月15日"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/wterexercise_index"
+        android:padding="@dimen/dp_5"
+        android:text="晨练指数："
+        android:layout_marginTop="@dimen/dp_90"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/wtertoday_exercise"
+        android:text="不适宜"
+        android:layout_marginTop="@dimen/dp_95"
+        android:layout_toRightOf="@+id/wterexercise_index"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

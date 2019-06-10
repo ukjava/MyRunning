@@ -1,0 +1,173 @@
+<resources>
+    <string name="app_name">毕设</string>
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+
+    <!--为了以后公司要求国际化，所有相关的文字都在资源文件中定义 -->
+
+    <string name="mall_index">主页</string>
+    <string name="sale_index">动态</string>
+    <string name="mine_index">我的</string>
+    <string name="book_index">书刊</string>
+
+    <string name="wait_pay">待付款</string>
+    <string name="daifahuo">待发货</string>
+    <string name="wait_delivery">待收货</string>
+    <string name="compleled">已完成</string>
+    <string name="all_orders">全部订单</string>
+
+
+    <string name="my_sale">我的商品</string>
+    <string name="partake_sale">关注商品</string>
+    <string name="sale_success">购物车</string>
+    <string name="go_pay">去支付</string>
+
+    <string name="my_wallet">我的钱包</string>
+    <string name="my_balance">我的余额</string>
+    <string name="cash_deposit">保证金</string>
+
+    <string name="common_utils">常用工具</string>
+    <string name="coupon">优惠券</string>
+    <string name="my_follow">我的关注</string>
+    <string name="my_partake">我要拍卖</string>
+    <string name="help">帮助中心</string>
+
+    <string name="select_all">全选</string>
+    <string name="cancel_all">取消全选</string>
+
+    <string name="clear_cart">结算</string>
+    <string name="delete_cart">删除</string>
+
+    <string name="completed">完成</string>
+    <string name="edit">编辑</string>
+
+    <!--商品详情相关-->
+    <string name="custom_service">客服</string>
+    <string name="cart">购物车</string>
+    <string name="add_cart">加入购物车</string>
+    <string name="buy_immediately">立即购买</string>
+    <string name="account_balance">账户余额</string>
+    <string name="WeChat_pay">微信支付</string>
+    <string name="Alipay_payment">支付宝支付</string>
+    <string name="balance_payment">余额支付</string>
+
+
+    <!-- 订单 -->
+    <string name="amount_payable">应付金额</string>
+    <string name="submit_orders">提交订单</string>
+    <string name="Select__shipping_address">选择收货地址</string>
+    <string name="commodity_information">商品信息</string>
+    <string name="coupons">优惠券</string>
+    <string name="amount_goods">商品金额</string>
+    <string name="freight">运费</string>
+    <string name="pay_success">支付成功</string>
+    <string name="check_order">查看订单</string>
+    <string name="back_homepage">返回首页</string>
+    <string name="my_order">我的订单</string>
+    <string name="all">全部</string>
+    <string name="for_payment">待付款</string>
+    <string name="send_goods">待发货</string>
+    <string name="for_goods">待收货</string>
+    <string name="has_been_ompleted">已完成</string>
+    <string name="cancelled">已取消</string>
+    <string name="cancel_order">取消订单</string>
+    <string name="payment">去付款</string>
+    <string name="confirm_payment">确认支付￥</string>
+    <string name="order_payment_failed">订单支付失败</string>
+    <string name="possible_delivery">我们会尽快给您发货</string>
+    <string name="unpaid">待支付</string>
+    <string name="received">已收货</string>
+    <string name="check_an_order">查看订单</string>
+    <string name="check_the_logistics">查看物流</string>
+    <string name="confirm_receipt">确认收货</string>
+    <string name="order_details">订单详情</string>
+    <string name="order_information">订单信息</string>
+
+
+    <!--  搜索  -->
+    <string name="recommend">推荐</string>
+    <string name="search_history">搜索历史</string>
+    <string name="empty">清空</string>
+    <string name="recommend_hint">搜索天气</string>
+    <string name="affirm">确认</string>
+    <string name="cancel">取消</string>
+
+
+    <!-- 设置 -->
+    <string name="settings">设置</string>
+    <string name="set_login_password">设置登录密码</string>
+    <string name="old_password">输入原登录密码</string>
+    <string name="new_password">输入新密码6-20位（包含数字或字母）</string>
+    <string name="new_password1">确认新登录密码</string>
+    <string name="save_password">保存密码</string>
+    <string name="qualifier">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+    <string name="personal_data">个人资料</string>
+    <string name="pay_password_verification">支付密码验证</string>
+    <string name="new_pay_password">设置新支付密码</string>
+    <string name="instructions1">输入原支付密码，完成身份验证</string>
+    <string name="instructions2">请设置新6位数支付密码</string>
+    <string name="pay_amount">请输入支付密码</string>
+    <string name="pay_password_successfully">支付密码设置成功</string>
+
+    <string name="my_attention">我的关注</string>
+
+
+    <string name="selected">已选</string>
+    <string name="specifications">规格</string>
+    <string name="selecte">选择</string>
+    <string name="number">数量</string>
+    <string name="illustrate">说明</string>
+
+    <string name="img_text_details">图文详情</string>
+    <string name="about_customer_service">相关售后</string>
+
+    <string name="goods_list">商品列表</string>
+    <string name="new_products">新品推荐</string>
+    <string name="selling_goods">热卖商品</string>
+    <string name="buy_key">一键购买</string>
+
+
+    <string name="jimei_headlines">头条</string>
+    <string name="article_list">文章列表</string>
+
+
+    <string name="balance_details_all">全部</string>
+    <string name="balance_details_income">收入</string>
+    <string name="balance_details_expenditure">支出</string>
+    <string name="gogo">去逛逛</string>
+
+
+    <string name="fill_order">填写订单</string>
+    <string name="order_payment">订单支付</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_fill_order">FillOrderActivity</string>
+    <string name="title_activity_pay_success">PaySuccessActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+
+
+    <string name="sure">确定</string>
+
+
+    <string name="photograph">拍照</string>
+    <string name="my_photo_albums">我的相册</string>
+
+
+    <string name="network_error">网络错误</string>
+
+    <string name="enter_nickname">请输入昵称</string>
+
+    <string name="order_submission_failed">订单提交失败</string>
+
+    <string name="send_verification_code">发送验证码</string>
+    <string name="has_been_sent">已发送</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="btn_login">立即登录</string>
+    <string name="verification_code_login">切换验证码登录</string>
+    <string name="password_login">切换密码登录</string>
+    <string name="verification_code">请输入验证码</string>
+    <string name="Please_enter_password">请输入密码</string>
+
+</resources>

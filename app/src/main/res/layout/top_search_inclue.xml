@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topsearch"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pink"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dp_9"
+    android:paddingLeft="@dimen/dp_15"
+    android:paddingRight="@dimen/dp_15"
+    android:paddingTop="@dimen/dp_8">
+
+    <LinearLayout
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/dp_23"
+            android:layout_height="@dimen/dp_23"
+            android:src="@mipmap/left_back" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ed_search"
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="@dimen/dp_29"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_cursor"
+        android:gravity="center"
+        android:hint="@string/recommend_hint"
+        android:textSize="@dimen/sp_12" />
+
+
+    <Button
+        android:id="@+id/btn_cart"
+        android:layout_width="@dimen/dp_25"
+        android:layout_height="@dimen/dp_25"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_marginRight="@dimen/dp_8"
+        android:visibility="gone"
+        android:background="@mipmap/fenxiang" />
+
+    <Button
+        android:id="@+id/btn_news"
+        android:layout_width="@dimen/dp_25"
+        android:layout_height="@dimen/dp_25"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        android:background="@mipmap/news" />
+
+
+    <TextView
+        android:id="@+id/affirm_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_13"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\xiazai\\2013-10-24_adt-bundle-windows-x86-20130917\\MyRunning\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v19\\values-v19.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Administrator.2013-20150129ZZ\\.gradle\\caches\\transforms-1\\files-1.1\\imagespickers-1.0.6.aar\\561eee884c6fc8e0a79a60d068d58cf9\\res\\values-v19\\values-v19.xml",
+                    "from": {
+                        "startLines": "2,6",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,266",
+                        "endLines": "5,9",
+                        "endColumns": "12,12",
+                        "endOffsets": "261,487"
+                    }
+                }
+            ]
+        }
+    ]
+}

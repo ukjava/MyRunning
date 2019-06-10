@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_weather_bg"
+    android:background="#224b8f"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_img_bg"
+        android:background="@mipmap/timg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_280" />
+
+    <TextView
+        android:id="@+id/tv_temp"
+        android:textSize="@dimen/dp_55"
+        android:text="29"
+        android:padding="@dimen/dp_2"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="℃"
+        android:layout_toRightOf="@+id/tv_temp"
+        android:textSize="@dimen/dp_20"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/dp_35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_today_city"
+        android:layout_below="@+id/tv_temp"
+        android:text="广州"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_20"
+        android:padding="@dimen/dp_5"
+        android:layout_marginLeft="@dimen/dp_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_today_week"
+        android:text="星期一"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:textSize="@dimen/dp_20"
+        android:padding="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_today_weather"
+        android:text="多云"
+        android:textColor="@color/white"
+        android:layout_below="@+id/tv_today_city"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:textSize="@dimen/dp_20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
